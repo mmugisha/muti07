@@ -5521,6 +5521,9 @@ input[type="button"].btn-block {
   -o-transform: translateY(-50%);
   transform: translateY(-50%);
 }
+.about-section {
+  background-color: blue;
+}
 
 .feature {
   margin-bottom: 30px;
