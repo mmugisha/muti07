@@ -5521,9 +5521,6 @@ input[type="button"].btn-block {
   -o-transform: translateY(-50%);
   transform: translateY(-50%);
 }
-.about-section {
-  background-color: blue;
-}
 
 .feature {
   margin-bottom: 30px;
@@ -5573,6 +5570,11 @@ input[type="button"].btn-block {
 .brand:hover, .brand:focus {
   color: #999;
   text-decoration: none;
+}
+.about-section {
+  color: white;
+  background-color: green;
+  display: block;
 }
 
 .video-popup-btn {
