@@ -29,19 +29,13 @@
 
   <!-- Theme Styles -->
   <link href="css/theme.min.css" rel="stylesheet" media="screen">
+  <link href="css/custom.css" rel="stylesheet" media="screen">
 
   <!-- Page Preloading -->
   <script src="js/vendor/page-preloading.js"></script>
 
   <!-- Modernizr -->
   <script src="js/vendor/modernizr.custom.js"></script>
-
-  <style>
-  #map {
-    height: 450px;
-    width: 100%;
-  }
-  </style>
 
 </head>
 
@@ -785,25 +779,7 @@
         <script async defer src="//platform.instagram.com/en_US/embeds.js"></script>
       </div><!-- .col-lg-3.col-sm-6 -->
     </div><!-- .row --> 
-
-   
-      <script>
-      function initMap() {
-        var uluru = {lat: 0.2346422, lng: 32.5614939};
-        var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 14,
-          center: uluru
-        });
-        var marker = new google.maps.Marker({
-          position: uluru,
-          map: map
-        });
-      }
-      </script>
-      <script async defer
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCQ1s3fWAAVE9Qt3oRQIbIZco54pWDnVGE&callback=initMap">
-      </script> 
-
+    <div id="map"></div>
     <!-- Footer -->
     <footer class="footer">
       <div class="column">
@@ -858,6 +834,32 @@
   <script src="js/vendor/jquery.downCount.js"></script>
   <script src="js/vendor/magnific-popup.min.js"></script>
   <script src="js/scripts.js"></script>
+  <!-- <script>
+      var map;
+      function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: -34.397, lng: 150.644},
+          zoom: 8
+        });
+      }
+    </script> -->
+    
+      <script>
+      function initMap() {
+        var uluru = {lat: 0.2346422, lng: 32.5614939};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 14,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+      </script>
+      <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCQ1s3fWAAVE9Qt3oRQIbIZco54pWDnVGE&callback=initMap">
+      </script> 
 
 </body><!-- <body> -->
 
