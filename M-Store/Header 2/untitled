@@ -1,7 +1,0 @@
- <nav class="main-navigation text-center">
-        <ul class="menu">
-          <li><a href="#home" class="page-scroll">Home</a></li>
-          <li><a href="about" class="page-scroll">About</a></li>
-          <li><a href="contacts" class="page-scroll">Contacts</a></li>
-        </ul><!-- .menu -->
-      </nav><!-- .main-navigation -->
